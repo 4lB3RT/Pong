@@ -1,15 +1,17 @@
+@keyframes example {
+    0% {opacity:0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+
 body{
     background-color: #F3F5F9;
     font-family: 'Roboto Mono', monospace;
 }
 
 header > .score-container {
-    background-color: #fff;
-    border-radius: 10px;
-    border: solid 1px #EAEAEA;
-    box-shadow: 2px 2px 10px #EAEAEA;
-    width: 600px;
-    height: 400px;
+    width: 300px;
+    height: 200px;
 }
 
 header > .score-container .header-score{
@@ -18,18 +20,34 @@ header > .score-container .header-score{
     border-bottom: solid 3px #EAEAEA;
 }
 
-header > .score-container .header-score .live-container .live-content{
-    width: 50px;
-    height: 50px;
+header > .score-container .header-score .live-container .live-content .text-live{
+    font-size: 10px;
+    width: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    background-color: #d726413b;
+    border-radius: 5px;
 }
 
-header > .score-container .header-score .live-container .text-live{
+header > .score-container .header-score .live-container .live-content .text-live::before{
+    content: ".";
+    position: absolute;
+    top: 0;
+    left: 355px;
+    font-size: 31px;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+header > .score-container .header-score .live-container {
     color: #D72641;
     opacity: 1;
 }
 
 header > .score-container .header-score .logo{
-    width: 100px;
+    width: 60px;
     border-radius: 10px;
 }
 
@@ -39,7 +57,7 @@ header > .score-container > .content-score{
 }
 
 header > .score-container > .content-score .score .score-point{
-    font-size: 48px;
+    font-size: 32px;
     font-weight: bold;
 }
 
@@ -49,8 +67,8 @@ header > .score-container > .content-score .out {
     justify-content: center;
     background-color: #F3F5F9;
     border-radius: 100%;
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
 }
 
 header > .score-container > .content-score .out .in{
@@ -65,9 +83,18 @@ header > .score-container > .content-score .out .in{
 }
 
 header > .score-container > .content-score .out .in .logo-team{
-    width: 70%;
+    width: 50%;
 }
 
+main .game {
+    width: 90%;
+    height: 600px;
+    position: relative;
+}
+
+main .game div{
+    border: solid 2px #EAEAEA;
+}
 .col-1{
     flex-grow: 1;
 }
@@ -84,6 +111,14 @@ header > .score-container > .content-score .out .in .logo-team{
     align-items: center;
     justify-content: center;
 }
+ 
+.left-0 {
+    left: 0;
+}
+
+.right-0 {
+    right: 0;
+}
 
 .text-center {
     text-align: center;
@@ -93,8 +128,16 @@ header > .score-container > .content-score .out .in .logo-team{
     margin: 5px;
 }
 
-.font-size-16{
-    font-size: 24px;
+.margin-left-20 {
+    margin-left: 20px;
+}
+
+.margin-right-20 {
+    margin-right: 20px;
+}
+
+.font-size-12{
+    font-size: 12px;
 }
 
 .width-100{
@@ -102,5 +145,31 @@ header > .score-container > .content-score .out .in .logo-team{
 }
 
 .color-grey{
-    color: #969696
+    color: #969696;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    border: solid 1px #EAEAEA;
+    box-shadow: 2px 2px 10px #EAEAEA;
+}
+
+.player {
+    top: 45%;
+    width: 15px;
+    height: 110px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+}
+
+#ball {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    left: 50%;
+    top: 50%;
 }
