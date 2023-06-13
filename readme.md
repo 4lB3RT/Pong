@@ -1,5 +1,3 @@
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/albert-garc%C3%ADa-cort%C3%A9s/]
-
 <div align="center">
   <a href="https://github.com/4lB3RT/Pong">
     <img src="images/logo.png" alt="Logo" width="120" height="80">
@@ -23,19 +21,12 @@
     </a>
   </div>
 
-  <div style="border:0.2px solid; margin-bottom:10px; margin-top:10px"></div>
-
-  <div>
+  <div style="margin-top:10px">
     <p>
       The Pong game is a classic. In this repo, I tried to recreate the game using vanilla JavaScript. As a backend developer, this repo represents my first step in learning frontend development.
       </p>
 
-  ### Built With
-
-* [![JS][https://developer.mozilla.org/es/docs/Web/JavaScript]][Js-url]
   </div>
-
-  <div style="border:0.2px solid; margin-bottom:10px; margin-top:10px"></div>
 
   <div>
     <h2>CHALLENGES 🤯</h2>
@@ -47,9 +38,6 @@
     </p>
   </div>
 
-  <div style="border:0.2px solid; margin-bottom:10px; margin-top:10px"></div>
-
-
   <div>
     <h2>QA 🤷‍♂️</h2>
     <h4>
@@ -59,8 +47,6 @@
       </p>
     </h4>
   </div>
-
-<div style="border:0.2px solid; margin-bottom:10px; margin-top:10px"></div>
 
 ## License
 
