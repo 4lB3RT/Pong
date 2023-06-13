@@ -21,7 +21,8 @@
     </a>
   </div>
 
-  <div style="margin-top:10px">
+  <h2 align="center">About</h3>
+  <div>
     <p>
       The Pong game is a classic. In this repo, I tried to recreate the game using vanilla JavaScript. As a backend developer, this repo represents my first step in learning frontend development.
       </p>
