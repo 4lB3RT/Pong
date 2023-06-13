@@ -5,24 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pong</title>
-    <script src="index.js"></script>
+    <script defer src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="score-container">
+    <header class="flex center">
+        <div class="score-container card">
             <div class="header-score flex center">
                 <div class="col-33-percentage live-container flex center">
                     <div class="flex live-content center">
-                        <div class="flex center">
-                            <span class="text-fullstop">.</span>
+                        <div id="live" class="text-live">
+                            Live
                         </div>
-                        <div>
-                            <span class="text-live">Live</span>
-                        </div>    
                     </div>
                 </div>
                 <div class="col-33-percentage flex center">
@@ -39,11 +36,11 @@
                             </div>
                         </div>    
                     </div>
-                    <div class="margin-5 font-size-16 width-100">
+                    <div class="margin-5 font-size-12 width-100">
                         Local
                     </div>
                 </div>
-                <div class="col-1 score text-center">
+                <div class="col-1 score text-center font-size-12">
                     <div id="date">
                         <span class="color-grey"> 12 Aug at </span>
                         <span>  19:00 </span> 
@@ -62,7 +59,7 @@
                             </div>
                         </div>    
                     </div>
-                    <div class="width-100 margin-5 font-size-16">
+                    <div class="width-100 margin-5 font-size-12">
                         Visitor
                     </div>
                 </div>
@@ -70,7 +67,17 @@
         </div>
     </header>
     <main>
-
+        <div class="width-100 flex center">
+            <div class="game card flex">
+                <div class="col-1 ">
+                    <div id="player1" class="player margin-left-20"></div>
+                </div>
+                <div class="col-1">
+                    <div id="player2" class="player right-0 margin-right-20"></div>
+                </div>
+                <div id="ball" class="flex center"></div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
